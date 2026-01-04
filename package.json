@@ -1,0 +1,51 @@
+{
+  "name": "jawir-script",
+  "displayName": "JAWIR Script Support",
+  "publisher": "Dapzz",
+  "description": "Bahasa JAWIR SCRIPT: nyocot, nyawang, baleni, umpamane, coro gak",
+  "version": "1.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:jawir",
+    "onCommand:jawir.runScript"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "jawir",
+        "aliases": [
+          "JAWIR Script",
+          "jawir"
+        ],
+        "extensions": [
+          ".jawir",
+          ".wir"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "jawir",
+        "scopeName": "source.jawir",
+        "path": "./syntaxes/jawir.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "jawir.runScript",
+        "title": "Wokkk Jawir Script Has Done"
+      }
+    ]
+  },
+  "scripts": {
+    "postinstall": "echo Jaaaawirrrr, extension has done!"
+  },
+  "dependencies": {}
+}

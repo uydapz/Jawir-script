@@ -1,0 +1,12 @@
+nyawang mood = 3
+nyocot "Aku dapa"
+
+baleni mood times
+    nyocot "balenono cangkemku"
+mandekolehmubaleni
+
+umpamane mood > 4 then
+    nyocot "mood apik tak terusno nehku nyangkem"
+coro gak
+    nyocot "mandek nyangkem"
+mandekngayal

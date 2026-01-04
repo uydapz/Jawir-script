@@ -1,0 +1,21 @@
+{
+  "scopeName": "source.jawir",
+  "patterns": [
+    {
+      "name": "keyword.control.jawir",
+      "match": "\\b(nyocot|nyawang|baleni|mandekolehmubaleni|umpamane|coro gak|mandekngayal|then)\\b"
+    },
+    {
+      "name": "string.quoted.double.jawir",
+      "match": "\"([^\"\\\\]|\\\\.)*\""
+    },
+    {
+      "name": "constant.numeric.jawir",
+      "match": "\\b\\d+\\b"
+    },
+    {
+      "name": "comment.line.number-sign.jawir",
+      "match": "#.*$"
+    }
+  ]
+}
